@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0](https://github.com/ken0911208818/laravel-EcPay/compare/v1.0.1...v1.1.0) (2020-09-29)
+
+
+### Features
+
+* new feture ([f354a46](https://github.com/ken0911208818/laravel-EcPay/commit/f354a46946e1f31a7477a5c02f6e2119a3c23e1e))
+
 ### [1.0.1](https://github.com/ken0911208818/laravel-EcPay/compare/v1.0.0...v1.0.1) (2020-09-29)
 
 
