@@ -1,5 +1,5 @@
 {
-    "name": "thoth-pharaoh/laravel-goldflow",
+    "name": "thoth-pharaoh-ken/laravel-goldflow",
     "description": "金流訂單產生器",
     "type": "library",
     "license": "MIT",
