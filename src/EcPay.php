@@ -6,7 +6,6 @@ class EcPay
 {
     public function test()
     {
-        dump('aad');
         return config('ecpay.HashIV');
     }
 }
