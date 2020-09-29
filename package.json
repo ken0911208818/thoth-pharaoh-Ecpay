@@ -7,7 +7,8 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release": "standard-version"
   },
   "repository": {
     "type": "git",
@@ -20,7 +21,8 @@
   },
   "homepage": "https://github.com/ken0911208818/laravel-EcPay#readme",
   "devDependencies": {
-    "husky": "^4.3.0"
+    "husky": "^4.3.0",
+    "standard-version": "^9.0.0"
   },
   "husky": {
     "hooks": {

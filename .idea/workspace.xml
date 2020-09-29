@@ -6,25 +6,11 @@
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
       </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
     </expand>
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d3fbbeb8-a262-4904-877a-846882590d66" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/ecpay.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exampleTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/EcPay.php" afterDir="false" />
-    </list>
+    <list default="true" id="d3fbbeb8-a262-4904-877a-846882590d66" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -167,7 +153,7 @@
       <option name="presentableId" value="Default" />
       <updated>1601343204796</updated>
       <workItem from="1601343208089" duration="2249000" />
-      <workItem from="1601359296293" duration="2746000" />
+      <workItem from="1601359296293" duration="3149000" />
     </task>
     <servers />
   </component>
