@@ -1,6 +1,6 @@
 {
   "name": "laravel-ecpay",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "金流訂單產生器",
   "main": "index.js",
   "directories": {
