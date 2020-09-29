@@ -1,0 +1,30 @@
+{
+  "name": "laravel-ecpay",
+  "version": "1.0.0",
+  "description": "金流訂單產生器",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ken0911208818/laravel-EcPay.git"
+  },
+  "author": "ken",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ken0911208818/laravel-EcPay/issues"
+  },
+  "homepage": "https://github.com/ken0911208818/laravel-EcPay#readme",
+  "devDependencies": {
+    "husky": "^4.3.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "php-cs-fixer fix . && git add ."
+    }
+  }
+}
