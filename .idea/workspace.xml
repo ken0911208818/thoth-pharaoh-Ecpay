@@ -10,7 +10,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d3fbbeb8-a262-4904-877a-846882590d66" name="Default Changelist" comment="" />
+    <list default="true" id="d3fbbeb8-a262-4904-877a-846882590d66" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/run.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -133,13 +136,25 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Shell Script.run.sh">
     <configuration name="exampleTest.test" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="exampleTest" file="$PROJECT_DIR$/exampleTest.php" method="test" scope="Method" />
       <method v="2" />
     </configuration>
+    <configuration name="run.sh" type="ShConfigurationType" temporary="true">
+      <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
+      <option name="SCRIPT_PATH" value="$PROJECT_DIR$/run.sh" />
+      <option name="SCRIPT_OPTIONS" value="" />
+      <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="true" />
+      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="INDEPENDENT_INTERPRETER_PATH" value="true" />
+      <option name="INTERPRETER_PATH" value="/bin/zsh" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Shell Script.run.sh" />
         <item itemvalue="PHPUnit.exampleTest.test" />
       </list>
     </recent_temporary>
@@ -153,7 +168,7 @@
       <option name="presentableId" value="Default" />
       <updated>1601343204796</updated>
       <workItem from="1601343208089" duration="2249000" />
-      <workItem from="1601359296293" duration="3530000" />
+      <workItem from="1601359296293" duration="4051000" />
     </task>
     <servers />
   </component>
