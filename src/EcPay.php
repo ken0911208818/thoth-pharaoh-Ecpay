@@ -6,6 +6,7 @@ class EcPay
 {
     public function test()
     {
+        dd('www');
         return config('ecpay.HashIV');
     }
 }
