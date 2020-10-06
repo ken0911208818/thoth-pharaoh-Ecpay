@@ -19,15 +19,41 @@ class ECPay_CreateTrade extends ECPay_Aio
         $szCheckMacValueReturn = '' ;
 
         $arParameters = self::process($arParameters, $arExtend);
-
         //產生檢查碼
         $szCheckMacValue = ECPay_CheckMacValue::generate($arParameters, $HashKey, $HashIV, $arParameters['EncryptType']);
         $arParameters["CheckMacValue"] = $szCheckMacValue;
+        // 發送訂單url
+        $ServicePostURL = $ServiceURL . '/SP/CreateTrade';
         // 送出查詢並取回結果。
-        $szResult = self::ServerPost($arParameters, $ServiceURL);
+        $szResult = self::ServerPost($arParameters, $ServicePostURL);
         // 轉結果為陣列。
         $arResult = json_decode($szResult, true);
-        dd($arResult);
+        // 重新整理回傳參數。
+        foreach ($arResult as $keys => $value) {
+            if ($keys == 'CheckMacValue') {
+                $szCheckMacValueReturn = $value;
+            } else {
+                $arFeedback[$keys] = $value;
+            }
+        }
+
+        if (array_key_exists('RtnCode', $arFeedback) && $arFeedback['RtnCode'] != '1') {
+            array_push($arErrors, vsprintf('#%s: %s', array($arFeedback['RtnCode'], $arFeedback['RtnMsg'])));
+        }
+
+        // 參數取回壓碼驗證
+        $szCheckMacValueReturnParameters = ECPay_CheckMacValue::generate($arFeedback, $HashKey, $HashIV, $arParameters['EncryptType']);
+
+        if ($szCheckMacValueReturnParameters != $szCheckMacValueReturn) {
+            array_push($arErrors, 'CheckMacValue verify fail.');
+        }
+        if (sizeof($arErrors) > 0) {
+            throw new \Exception(join('- ', $arErrors));
+        }
+        // 訂單網址
+        $CreditURL = $ServiceURL . '/SP/SPCheckOut?MerchantID=' . $arParameters['MerchantID'];
+        $CreditURL .= '&SPToken=' . $arFeedback['SPToken'] . '&PaymentType=' . $arParameters['ChoosePayment'];
+        return $CreditURL;
     }
 
     protected static function process(array $arParameters = [], array $arExtend = [])

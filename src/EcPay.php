@@ -34,9 +34,9 @@ class EcPay implements allInterface
     {
         date_default_timezone_set('Asia/Taipei');
         if (config('app.env') == 'production') {
-            $this->ServiceURL = 'https://payment.ecpay.com.tw/Cashier/AioCheckOut/V5';
+            $this->ServiceURL = 'https://payment.ecpay.com.tw';
         } else {
-            $this->ServiceURL = 'https://payment-stage.ecpay.com.tw/Cashier/AioCheckOut/V5';
+            $this->ServiceURL = 'https://payment-stage.ecpay.com.tw';
         }
         $this->MerchantID = config('ecpay.MerchantId');
         $this->HashIV = config('ecpay.HashIV');
