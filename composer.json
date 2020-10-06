@@ -12,7 +12,22 @@
     "require": {
         "php": ">=7.2",
         "laravel/framework": "^6|^7|^8",
-        "phpunit/phpunit": "^7",
         "codedungeon/phpunit-result-printer": "^0.28.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "ThothPharaohKen\\laravelGoldFlow\\": "src/",
+            "ThothPharaohKen\\laravelGoldFlow\\Test\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "ThothPharaohKen\\laravelGoldFlow\\GoldFlowServiceProvider"
+            ]
+        }
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.2"
     }
 }

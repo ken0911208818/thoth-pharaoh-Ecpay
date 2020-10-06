@@ -1,0 +1,1 @@
+C:37:"PHPUnit\Runner\DefaultTestResultCache":318:{a:2:{s:7:"defects";a:2:{s:51:"ThothPharaohKen\laravelGoldFlow\Test\testTest::test";i:4;s:58:"ThothPharaohKen\laravelGoldFlow\Test\EcPayTest::test_EcPay";i:4;}s:5:"times";a:2:{s:51:"ThothPharaohKen\laravelGoldFlow\Test\testTest::test";d:0.079;s:58:"ThothPharaohKen\laravelGoldFlow\Test\EcPayTest::test_EcPay";d:0.098;}}}
