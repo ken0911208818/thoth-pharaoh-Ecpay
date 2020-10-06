@@ -179,7 +179,7 @@ class XXX
  data-CustomerBtn="0" >
 </script>
 ```
-[js套版](https://github.com/ken0911208818/thoth-pharaoh-Ecpay/blob/master/js套版.png)
+![](https://github.com/ken0911208818/thoth-pharaoh-Ecpay/blob/master/js%E5%A5%97%E7%89%88.png?raw=true)
 
 ## 安全碼檢查
 
