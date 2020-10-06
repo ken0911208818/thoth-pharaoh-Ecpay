@@ -108,23 +108,30 @@ class EcPay implements allInterface
         );
     }
 
-    public function CreateTrade(string $no = null)
+    /**
+     * @param string|null $no 訂單編號
+     * @param bool $inWeb 是否要內置於網頁中或是另開分頁
+     * @return string|array
+     * @throws \Exception
+     */
+    public function CreateTrade(string $no = null, bool $inWeb = false)
     {
         if ($no == null) {
             $no = 'thoth' . strtotime("now") . rand(0, 100);
         }
         array_push($this->Send['Items'], [
-            "Name" => config('ecpay.TradeDesc'),
+            "Name" => $this->Send['TradeDesc'],
             "Price" => $this->Send['TotalAmount'],
             "Currency" => "點",
             "Quantity" => 1
         ]);
         $this->Send['MerchantTradeNo'] = $no;
         $arParameters = array_merge(array('MerchantID' => $this->MerchantID, 'EncryptType' => $this->EncryptType), $this->Send);
-        return $arFeedback = ECPay_CreateTrade::CheckOut($arParameters, $this->SendExtend, $this->HashKey, $this->HashIV, $this->ServiceURL);
+        return $arFeedback = ECPay_CreateTrade::CheckOut($arParameters, $this->SendExtend, $this->HashKey, $this->HashIV, $this->ServiceURL, $inWeb);
     }
 
     /**
+     * CVS
      * @param int $price 存款點數
      * @param int $storeExpireDate 超商代碼繳費時間 單位(分鐘)
      * @return $this
@@ -138,6 +145,7 @@ class EcPay implements allInterface
     }
 
     /**
+     * ATM
      * @param int $price 存款點數
      * @param int $expireDate ATM轉帳 單位(天數)
      * @return $this
@@ -150,7 +158,24 @@ class EcPay implements allInterface
         return $this;
     }
 
-    public static function payment(string $payment)
+    /**
+     * 信用卡
+     * @param int $price 價格
+     * @param int|null $creditInstallment 分期付款 預設null 可設定參數3,6,9,12
+     * @return $this
+     */
+    public function Credit(int $price, int $creditInstallment = null)
     {
+        if ($creditInstallment != null) {
+            $this->Send['CreditInstallment'] = $creditInstallment;
+        }
+        $this->Send['ChoosePayment'] = ECPay_PaymentMethod::Credit;
+        return $this;
+    }
+
+    public function setTradeDesc(string $TradeDesc)
+    {
+        $this->Send['TradeDesc'] = $TradeDesc;
+        return $this;
     }
 }

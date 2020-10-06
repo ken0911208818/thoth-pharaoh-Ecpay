@@ -35,4 +35,21 @@ class EcPayTest extends BaseTestCase
         ];
         $this->assertTrue(CheckMacValue::comparison($testvalue));
     }
+
+    public function test_Credit_ECPay()
+    {
+        $pay = new Ecpay('http://pharaohcashapi.thoth-dev.com', 'http://pharaohcashapi.thoth-dev.com');
+        $result = $pay->ATM(500, 1440)->CreateTrade();
+        $result = explode('&', $result, 3);
+        $this->assertSame('PaymentType=ATM', end($result));
+    }
+
+    public function test_inWeb_EcPay()
+    {
+        $pay = new Ecpay('http://pharaohcashapi.thoth-dev.com', 'http://pharaohcashapi.thoth-dev.com');
+        $result = $pay->ATM(500, 1440)->CreateTrade(null, true);
+        $this->assertArrayHasKey('MerchantID', $result);
+        $this->assertArrayHasKey('SPToken', $result);
+        $this->assertArrayHasKey('PaymentType', $result);
+    }
 }

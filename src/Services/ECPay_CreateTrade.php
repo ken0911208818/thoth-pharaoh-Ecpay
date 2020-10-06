@@ -12,7 +12,7 @@ class ECPay_CreateTrade extends ECPay_Aio
     //付款方式物件
     public static $PaymentObj ;
 
-    public static function CheckOut(array $arParameters, array $arExtend, string $HashKey, string $HashIV, string $ServiceURL)
+    public static function CheckOut(array $arParameters, array $arExtend, string $HashKey, string $HashIV, string $ServiceURL, bool $inWeb)
     {
         $arErrors = [];
         $arFeedback = [];
@@ -49,6 +49,13 @@ class ECPay_CreateTrade extends ECPay_Aio
         }
         if (sizeof($arErrors) > 0) {
             throw new \Exception(join('- ', $arErrors));
+        }
+        if ($inWeb == true) {
+            return [
+                'MerchantID'    => $arParameters['MerchantID'],
+                'SPToken'       => $arFeedback['SPToken'],
+                'PaymentType'   => $arParameters['ChoosePayment'],
+            ];
         }
         // 訂單網址
         $CreditURL = $ServiceURL . '/SP/SPCheckOut?MerchantID=' . $arParameters['MerchantID'];

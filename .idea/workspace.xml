@@ -11,9 +11,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d3fbbeb8-a262-4904-877a-846882590d66" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/CheckMacValue.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js套版.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.phpunit.result.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.phpunit.result.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/EcPay.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/EcPay.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Services/ECPay_CreateTrade.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/ECPay_CreateTrade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/EcPayTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/EcPayTest.php" afterDir="false" />
@@ -153,18 +154,17 @@
     <property name="settings.editor.selected.configurable" value="php.test.frameworks.configurable" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/Services" />
       <recent name="$PROJECT_DIR$/tests" />
     </key>
   </component>
-  <component name="RunManager" selected="PHPUnit.EcPayTest.test_CheckMacVAlue_EcPay">
+  <component name="RunManager" selected="PHPUnit.EcPayTest.test_inWeb_EcPay">
     <configuration name="EcPayTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="ThothPharaohKen\laravelGoldFlow\Test\EcPayTest" file="$PROJECT_DIR$/tests/EcPayTest.php" scope="Class" />
-      <method v="2" />
-    </configuration>
-    <configuration name="EcPayTest.test_ATM_EcPay" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="ThothPharaohKen\laravelGoldFlow\Test\EcPayTest" file="$PROJECT_DIR$/tests/EcPayTest.php" method="test_ATM_EcPay" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="EcPayTest.test_CVS_EcPay" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
@@ -175,17 +175,21 @@
       <TestRunner class="ThothPharaohKen\laravelGoldFlow\Test\EcPayTest" file="$PROJECT_DIR$/tests/EcPayTest.php" method="test_CheckMacVAlue_EcPay" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="EcPayTest.test_EcPay" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="ThothPharaohKen\laravelGoldFlow\Test\EcPayTest" file="$PROJECT_DIR$/tests/EcPayTest.php" method="test_EcPay" scope="Method" />
+    <configuration name="EcPayTest.test_Credit_ECPay" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="ThothPharaohKen\laravelGoldFlow\Test\EcPayTest" file="$PROJECT_DIR$/tests/EcPayTest.php" method="test_Credit_ECPay" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="EcPayTest.test_inWeb_EcPay" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="ThothPharaohKen\laravelGoldFlow\Test\EcPayTest" file="$PROJECT_DIR$/tests/EcPayTest.php" method="test_inWeb_EcPay" scope="Method" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="PHPUnit.EcPayTest.test_CheckMacVAlue_EcPay" />
-        <item itemvalue="PHPUnit.EcPayTest.test_ATM_EcPay" />
+        <item itemvalue="PHPUnit.EcPayTest.test_inWeb_EcPay" />
         <item itemvalue="PHPUnit.EcPayTest.test_CVS_EcPay" />
-        <item itemvalue="PHPUnit.EcPayTest.test_EcPay" />
+        <item itemvalue="PHPUnit.EcPayTest.test_Credit_ECPay" />
         <item itemvalue="PHPUnit.EcPayTest" />
+        <item itemvalue="PHPUnit.EcPayTest.test_CheckMacVAlue_EcPay" />
       </list>
     </recent_temporary>
   </component>
@@ -239,22 +243,22 @@
       <screen x="-364" y="-1080" width="1920" height="1080" />
     </state>
     <state x="478" y="-668" key="Create Database Migration/0.0.1280.800/-364.-1080.1920.1080@-364.-1080.1920.1080" timestamp="1601865045727" />
-    <state width="1878" height="300" key="GridCell.Tab.0.bottom" timestamp="1601956615062">
+    <state width="1878" height="300" key="GridCell.Tab.0.bottom" timestamp="1601964302073">
       <screen x="-364" y="-1080" width="1920" height="1080" />
     </state>
-    <state width="1878" height="300" key="GridCell.Tab.0.bottom/0.0.1280.800/-364.-1080.1920.1080@-364.-1080.1920.1080" timestamp="1601956615062" />
-    <state width="1878" height="300" key="GridCell.Tab.0.center" timestamp="1601956615056">
+    <state width="1878" height="300" key="GridCell.Tab.0.bottom/0.0.1280.800/-364.-1080.1920.1080@-364.-1080.1920.1080" timestamp="1601964302073" />
+    <state width="1878" height="300" key="GridCell.Tab.0.center" timestamp="1601964302066">
       <screen x="-364" y="-1080" width="1920" height="1080" />
     </state>
-    <state width="1878" height="300" key="GridCell.Tab.0.center/0.0.1280.800/-364.-1080.1920.1080@-364.-1080.1920.1080" timestamp="1601956615056" />
-    <state width="1878" height="300" key="GridCell.Tab.0.left" timestamp="1601956615053">
+    <state width="1878" height="300" key="GridCell.Tab.0.center/0.0.1280.800/-364.-1080.1920.1080@-364.-1080.1920.1080" timestamp="1601964302066" />
+    <state width="1878" height="300" key="GridCell.Tab.0.left" timestamp="1601964302063">
       <screen x="-364" y="-1080" width="1920" height="1080" />
     </state>
-    <state width="1878" height="300" key="GridCell.Tab.0.left/0.0.1280.800/-364.-1080.1920.1080@-364.-1080.1920.1080" timestamp="1601956615053" />
-    <state width="1878" height="300" key="GridCell.Tab.0.right" timestamp="1601956615059">
+    <state width="1878" height="300" key="GridCell.Tab.0.left/0.0.1280.800/-364.-1080.1920.1080@-364.-1080.1920.1080" timestamp="1601964302063" />
+    <state width="1878" height="300" key="GridCell.Tab.0.right" timestamp="1601964302070">
       <screen x="-364" y="-1080" width="1920" height="1080" />
     </state>
-    <state width="1878" height="300" key="GridCell.Tab.0.right/0.0.1280.800/-364.-1080.1920.1080@-364.-1080.1920.1080" timestamp="1601956615059" />
+    <state width="1878" height="300" key="GridCell.Tab.0.right/0.0.1280.800/-364.-1080.1920.1080@-364.-1080.1920.1080" timestamp="1601964302070" />
     <state x="374" y="-741" width="587" height="566" key="NewPhpClassDialog" timestamp="1601956059857">
       <screen x="-364" y="-1080" width="1920" height="1080" />
     </state>
